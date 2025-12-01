@@ -96,6 +96,7 @@ async def fetch_quote(symbol: str) -> dict:
             data["fetched_at"] = asyncio.get_event_loop().time()
             
             logger.info(f"Successfully fetched quote for {symbol}")
+            
             return data
 
 

@@ -1,7 +1,10 @@
 import pytest
 import pandas as pd
 import re
+import pytest
+import asyncio
 @pytest.fixture
+
 
 def remove_whitespace(df):
   df = df.copy()
@@ -223,3 +226,4 @@ def data_validation(df):
     # account_type harus salah satu dari: SAVINGS, CURRENT, CREDIT_CARD, LOAN
     if account_type_val(df.loc[idx, "account_type"]) == False:
       print(f'for id {df.loc[idx, df.columns[0]]} account type is invalid must use SAVINGS, CURRENT, CREDIT_CARD, or LOAN')
+
