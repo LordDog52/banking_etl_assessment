@@ -23,7 +23,7 @@ Bangking validation rule
 Cara running ETL
 
 1. Pastikan library pandas dan aiohttp sudah terinstall
-2. current directory harus pada folder bangking_etl_assessment
+2. current directory harus pada folder banking_etl_assessment
 3. Jalan kan command berikut di command prompt python3 etl/__init__.py
 
 Cara running test
